@@ -45,7 +45,7 @@ body {
 }
 
 h1 {
-  font-size: 68px;
+  font-size: 54px;
   line-height: 1;
   font-weight: 800;
   letter-spacing: -0.02em;
@@ -60,7 +60,7 @@ h1.accent, h1 .accent { color: var(--accent-deep); }
   gap: 8px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
-  font-size: 28px;
+  font-size: 22px;
 }
 .menu a {
   color: var(--ink);
@@ -217,7 +217,7 @@ h1.accent, h1 .accent { color: var(--accent-deep); }
 
 @media (max-width: 760px) {
   .content { grid-template-columns: 1fr; padding: 36px 28px 48px; }
-  h1 { font-size: 56px; }
+  h1 { font-size: 44px; }
   .art { width: 260px; height: 280px; align-self: center; }
   .right { align-items: flex-start; }
 }
