@@ -111,7 +111,7 @@
   const AUTO_DRIFT = 0.4;
 
   function render() {
-    target -= AUTO_DRIFT;
+    target += AUTO_DRIFT;
     offset += (target - offset) * 0.12;
     const wrapped = ((offset % LOOP) + LOOP) % LOOP;
     track.style.transform = `${baseTransform} translateX(${-wrapped}px)`;
