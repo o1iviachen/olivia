@@ -31,12 +31,12 @@ body {
 }
 
 .page {
-  max-width: 640px;
+  max-width: 512px;
   margin: 0 auto;
-  padding: 96px 28px 72px;
+  padding: 77px 22px 58px;
   display: flex;
   flex-direction: column;
-  gap: 48px;
+  gap: 38px;
   min-height: 100vh;
 }
 
@@ -48,7 +48,7 @@ body {
 }
 
 h1 {
-  font-size: 28px;
+  font-size: 22px;
   font-weight: 700;
   letter-spacing: -0.01em;
   margin: 0;
@@ -58,9 +58,9 @@ h1 {
   background: transparent;
   border: 1px solid var(--dot);
   color: var(--muted);
-  width: 36px;
-  height: 36px;
-  border-radius: 8px;
+  width: 29px;
+  height: 29px;
+  border-radius: 7px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -71,6 +71,7 @@ h1 {
   color: var(--ink);
   background: var(--hover-bg);
 }
+.theme-toggle svg { width: 14px; height: 14px; }
 :root[data-theme="light"] .icon-moon { display: none; }
 :root[data-theme="dark"] .icon-sun { display: none; }
 
@@ -82,21 +83,21 @@ main { flex: 1; }
   margin: 0;
   display: flex;
   flex-direction: column;
-  gap: 14px;
-  font-size: 17px;
+  gap: 11px;
+  font-size: 14px;
   line-height: 1.5;
 }
 .bullets li {
   position: relative;
-  padding-left: 22px;
+  padding-left: 18px;
 }
 .bullets li::before {
   content: "";
   position: absolute;
-  left: 4px;
-  top: 11px;
-  width: 5px;
-  height: 5px;
+  left: 3px;
+  top: 9px;
+  width: 4px;
+  height: 4px;
   border-radius: 50%;
   background: var(--muted);
 }
@@ -115,7 +116,9 @@ a.bookd:hover { color: #00e540; border-color: #00e540; }
 
 .ext {
   display: inline-block;
-  margin-left: 6px;
+  width: 11px;
+  height: 11px;
+  margin-left: 5px;
   transform: translateY(2px);
   opacity: 0.7;
 }
@@ -123,7 +126,7 @@ a:hover .ext { opacity: 1; }
 
 .socials {
   display: flex;
-  gap: 18px;
+  gap: 14px;
   align-items: center;
 }
 .socials a {
@@ -132,13 +135,14 @@ a:hover .ext { opacity: 1; }
   display: inline-flex;
   transition: color 120ms ease, transform 120ms ease;
 }
+.socials a svg { width: 14px; height: 14px; }
 .socials a:hover {
   color: var(--accent);
   transform: translateY(-1px);
 }
 
 @media (max-width: 600px) {
-  .page { padding: 64px 22px 48px; gap: 36px; }
-  h1 { font-size: 24px; }
-  .bullets { font-size: 16px; }
+  .page { padding: 51px 18px 38px; gap: 29px; }
+  h1 { font-size: 19px; }
+  .bullets { font-size: 13px; }
 }
