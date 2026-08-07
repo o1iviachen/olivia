@@ -1,8 +1,21 @@
+@font-face {
+  font-family: "PP Neue Montreal";
+  src: url("fonts/PPNeueMontreal-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "PP Neue Montreal";
+  src: url("fonts/PPNeueMontreal-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --bg: #f4f4ef;
-  --dot: rgba(0, 0, 0, 0.08);
   --ink: #1a1a1a;
-  --muted: #8a8a82;
   --accent: #8eb02c;
 }
 
@@ -16,7 +29,7 @@ html, body {
 body {
   background-color: var(--bg);
   color: var(--ink);
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "PP Neue Montreal", "Helvetica Neue", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   min-height: 100vh;
 }
@@ -40,7 +53,7 @@ body {
 
 h1 {
   font-size: 22px;
-  font-weight: 700;
+  font-weight: 300;
   letter-spacing: -0.01em;
   margin: 0;
 }
@@ -69,15 +82,13 @@ main { flex: 1; }
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: var(--muted);
+  background: var(--ink);
 }
-
-.muted { color: var(--muted); }
 
 a {
   color: var(--ink);
   text-decoration: none;
-  border-bottom: 1px solid var(--muted);
+  border-bottom: 1px solid var(--ink);
   transition: color 120ms ease, border-color 120ms ease;
 }
 a:hover { color: var(--accent); border-color: var(--accent); }
@@ -90,9 +101,7 @@ a.bookd:hover { color: #00e540; border-color: #00e540; }
   height: 11px;
   margin-left: 5px;
   transform: translateY(2px);
-  opacity: 0.7;
 }
-a:hover .ext { opacity: 1; }
 
 .socials {
   display: flex;
@@ -100,7 +109,7 @@ a:hover .ext { opacity: 1; }
   align-items: center;
 }
 .socials a {
-  color: var(--muted);
+  color: var(--ink);
   border: none;
   display: inline-flex;
   transition: color 120ms ease, transform 120ms ease;
