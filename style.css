@@ -1,18 +1,9 @@
-:root[data-theme="light"] {
+:root {
   --bg: #f4f4ef;
   --dot: rgba(0, 0, 0, 0.08);
   --ink: #1a1a1a;
   --muted: #8a8a82;
   --accent: #8eb02c;
-  --hover-bg: rgba(0, 0, 0, 0.05);
-}
-:root[data-theme="dark"] {
-  --bg: #111110;
-  --dot: rgba(255, 255, 255, 0.06);
-  --ink: #ececea;
-  --muted: #6f6f68;
-  --accent: #b8d255;
-  --hover-bg: rgba(255, 255, 255, 0.06);
 }
 
 * { box-sizing: border-box; }
@@ -53,27 +44,6 @@ h1 {
   letter-spacing: -0.01em;
   margin: 0;
 }
-
-.theme-toggle {
-  background: transparent;
-  border: 1px solid var(--dot);
-  color: var(--muted);
-  width: 29px;
-  height: 29px;
-  border-radius: 7px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: color 120ms ease, background 120ms ease, border-color 120ms ease;
-}
-.theme-toggle:hover {
-  color: var(--ink);
-  background: var(--hover-bg);
-}
-.theme-toggle svg { width: 14px; height: 14px; }
-:root[data-theme="light"] .icon-moon { display: none; }
-:root[data-theme="dark"] .icon-sun { display: none; }
 
 main { flex: 1; }
 

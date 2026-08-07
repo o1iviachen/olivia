@@ -7,23 +7,11 @@
 <link rel="icon" type="image/jpeg" href="favicon.jpeg" />
 <link rel="stylesheet" href="style.css" />
 <script data-goatcounter="https://oliviachen.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
-<script>
-  (() => {
-    const stored = localStorage.getItem('theme');
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    const theme = stored || (prefersDark ? 'dark' : 'light');
-    document.documentElement.dataset.theme = theme;
-  })();
-</script>
 </head>
 <body>
   <div class="page">
     <header class="topbar">
       <h1>olivia chen</h1>
-      <button class="theme-toggle" aria-label="toggle theme">
-        <svg class="icon-sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
-        <svg class="icon-moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-      </button>
     </header>
 
     <main>
@@ -42,7 +30,7 @@
     </main>
 
     <footer class="socials">
-      <a href="mailto:olivia@bookd-app.com" data-track="email" aria-label="email">
+      <a href="mailto:olivia@bookdfootball.com" data-track="email" aria-label="email">
         <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
       </a>
       <a href="https://www.linkedin.com/in/o1iviachen/" target="_blank" rel="noreferrer" aria-label="linkedin" data-track="linkedin">
